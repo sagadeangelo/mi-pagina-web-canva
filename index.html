@@ -92,6 +92,105 @@
       <a href="mailto:contacto@lasagadeangelo.com.mx" class="btn-contacto">Contáctanos</a>
     </div>
   </section>
+<section id="sobre-autor" class="seccion-autor">
+  <div class="contenedor-autor">
+
+    <!-- Imagen del autor -->
+    <div class="autor-imagen">
+      <img src="images/banner_redimensionado.png" alt="Miguel Tovar Amaral - Escritor">
+    </div>
+
+    <!-- Texto descriptivo -->
+    <div class="autor-texto">
+      <h2>Sobre el Autor & La Saga de Ángelo</h2>
+      <h3>Creador de historias que despiertan conciencia y emoción</h3>
+
+      <p><strong>Miguel Tovar Amaral</strong> es un escritor mexicano de ciencia ficción con una pasión por explorar los límites del alma humana, la tecnología y el destino. Su obra nace de una profunda inquietud filosófica y espiritual, traducida en novelas que combinan acción, misterio y transformación interior.</p>
+
+      <p><strong>La Saga de Ángelo</strong> es una epopeya de ciencia ficción, misterio y autodescubrimiento. A través de sus páginas, seguimos el viaje de Ángelo, un joven marcado por el abandono, que se ve envuelto en una misión que trasciende los límites de nuestro mundo. Lo acompañamos en una lucha contra conspiraciones alienígenas, secretos ancestrales y el despertar de su verdadero potencial.</p>
+
+      <a href="#libros" class="btn-saga">Explorar la saga</a>
+    </div>
+  </div>
+</section>
+
+<!-- CSS sugerido -->
+<style>
+.seccion-autor {
+  background: linear-gradient(160deg, #111, #1a1a1a);
+  color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.contenedor-autor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.autor-imagen img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.autor-texto {
+  flex: 1 1 500px;
+}
+
+.autor-texto h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #94def3;
+  font-family: 'Emilys Candy', cursive;
+}
+
+.autor-texto h3 {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.autor-texto p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.btn-saga {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f39c12;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-saga:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .contenedor-autor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .autor-texto {
+    padding: 0 10px;
+  }
+}
+</style>
 
   <!-- Libros -->
   <section id="libros">
@@ -126,18 +225,25 @@
 
   <!-- Blog -->
   <section id="blog">
-    <h2>Blog</h2>
-    <article>
+  <h2>Blog</h2>
+
+  <div class="blog-grid">
+
+    <article class="tarjeta-blog">
       <h3>Cómo publicar tu novela en Amazon KDP</h3>
       <p>Descubre los pasos esenciales para autopublicar con éxito y llegar a lectores de todo el mundo.</p>
-      <a href="blog-kdp.html">Leer más</a>
+      <a href="blog-kdp.html" class="btn-blog">Leer más</a>
     </article>
-    <article>
+
+    <article class="tarjeta-blog">
       <h3>10 consejos para no postergar tus proyectos</h3>
       <p>Aprende a vencer la procrastinación y avanzar con tus metas creativas y personales.</p>
-      <a href="blog-procrastinacion.html">Leer más</a>
+      <a href="blog-procrastinacion.html" class="btn-blog">Leer más</a>
     </article>
-  </section>
+
+  </div>
+</section>
+
 
   <!-- Pie de página -->
   <footer id="contacto">
