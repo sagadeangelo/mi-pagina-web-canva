@@ -94,7 +94,7 @@ body {
 /* ----------------------- SECCIÓN SERVICIOS ----------------------- */
 #servicios {
   padding: 60px 20px;
-  background: linear-gradient(160deg, #111, #1a1a1a);
+  background: linear-gradient(160deg, #111, #333030);
   text-align: center;
 }
 
@@ -751,4 +751,21 @@ body {
 .portada-contenido {
   position: relative;
   z-index: 1;
+}
+.fondo-kdp {
+  background: url("images/servicio-kdp.png") center/cover no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.fondo-epub {
+  background: url("images/servicio-epub.png") center/cover no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.fondo-maquetacion {
+  background: url("images/servicio-maquetacion.png") center/cover no-repeat;
+  background-size: cover;
+  color: white;
 }
