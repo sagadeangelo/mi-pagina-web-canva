@@ -5,82 +5,118 @@
   box-sizing: border-box;
 }
 
-body.fondo-libro1 {
-  background-image: url("images/fondo-libro1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* opcional si quieres efecto parallax */
+body {
+  font-family: 'Emilys Candy', cursive;
+  background-color: #000;
+  color: #fff;
 }
 
-
-/* Encabezado */
-header {
-  background-color: #1a1a1a;
-  padding: 20px;
+/* Encabezado mejorado */
+.header-portada {
+  background: linear-gradient(180deg, #0a0a0a 60%, #1c1c1c);
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 2px solid #444;
 }
 
 .logo img {
-  height: 60px;
+  height: 70px;
 }
 
-nav ul {
+.nav-botones {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
-nav a {
+.nav-botones li a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #f5f5f5;
+  background-color: #1a1a1a;
   color: #f5f5f5;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease;
 }
 
-nav a:hover {
-  color: #f39c12;
+.nav-botones li a:hover {
+  background-color: #ffd700;
+  color: #000;
+  border-color: #fff;
 }
 
-/* Portada */
+/* Portada principal mejorada */
 .portada {
+  background: url("images/fondo.png") center/cover no-repeat;
+  padding: 100px 20px;
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(160deg, #1c1c1c, #000);
+  position: relative;
+  color: #fff;
 }
-  
-.portada p {
-  color: #82e0aa;
-  font-weight: bold;
-  text-shadow: 0 0 8px #5dade2, 0 0 12px #5dade2;
+
+.portada::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 0;
+}
+
+.portada-contenido {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .titulo-portada {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 4rem;
+  color: #94def3;
+  text-shadow: 2px 2px 5px #000;
   margin-bottom: 20px;
-  color: #68c7fa;
-  font-family: 'Emilys Candy', cursive;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-
-.portada p {
-  font-size: 18px;
-  color: #cccccc;
-  margin-bottom: 30px;
+.subtitulo-portada {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ccc;
+  text-shadow: 1px 1px 3px #111;
 }
 
-.portada img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+/* Responsivo portada */
+@media (max-width: 768px) {
+  .titulo-portada {
+    font-size: 2.5rem;
+  }
+  .subtitulo-portada {
+    font-size: 1.2rem;
+  }
+  .header-portada {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .logo img {
+    height: 50px;
+  }
+  .nav-botones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-botones li a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
+/* ======= CONTINÚA CON TU CSS ORIGINAL DESDE AQUÍ ======= */
 /* Servicios Editoriales */
 #servicios {
   padding: 60px 20px;
