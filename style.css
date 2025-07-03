@@ -486,3 +486,70 @@ body {
   background-color: #e67e22;
   color: #fff;
 }
+#blog {
+  background: linear-gradient(160deg, #0d0d0d, #000);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#blog h2 {
+  font-family: 'Emilys Candy', cursive;
+  font-size: 42px;
+  color: #f37c41;
+  margin-bottom: 40px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tarjeta-blog {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(243, 156, 18, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-blog:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-blog h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.tarjeta-blog p {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn-blog {
+  display: inline-block;
+  background-color: #f39c12;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.btn-blog:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
