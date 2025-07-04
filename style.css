@@ -79,10 +79,11 @@ body {
 
 .titulo-portada {
   font-size: 4rem;
-  color: #94def3;
-  text-shadow: 2px 2px 5px #000;
-  margin-bottom: 20px;
+  color: #e8dac5; /* un dorado suave */
+  text-shadow: 0 0 10px #f8c471, 0 0 20px #f39c12, 0 0 30px #f39c12;
+  margin-bottom: 40px;
 }
+
 
 .subtitulo-portada {
   font-size: 1.5rem;
@@ -101,7 +102,7 @@ body {
 #servicios h2 {
   font-size: 46px;
   margin-bottom: 40px;
-  color: #e98024;
+  color: #d96e11;
   font-family: 'Emilys Candy', cursive;
 }
 
@@ -402,7 +403,7 @@ body {
 
 .acerca-texto h2 {
   font-size: 36px;
-  color: #f39c12;
+  color: #d47a19;
   margin-bottom: 20px;
   font-family: 'Emilys Candy', cursive;
 }
