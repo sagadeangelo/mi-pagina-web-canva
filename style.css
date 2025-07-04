@@ -66,7 +66,7 @@ body {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.4);
   z-index: 0;
 }
 
@@ -822,66 +822,60 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
-.explora-saga {
+.subtexto-portada {
+  margin-top:125px; /* Puedes aumentar este número si aún se superpone */
+  font-size: 1.2rem;
+  color: #ddd;
+  text-shadow: 1px 1px 3px #000;
+}
+.contenedor-saga {
   position: relative;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  background: #0a0a0a;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4); /* el fondo semitransparente sobre el video */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  backdrop-filter: blur(5px); /* opcional para dar claridad al texto */
 }
 
-.fondo-animado {
+.video-fondo {
   position: absolute;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(#f8c471 2px, transparent 2px);
-  background-size: 40px 40px;
-  animation: mover-estrellas 40s linear infinite;
-  opacity: 0.08;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.35; /* puedes subirlo a 0.5 si deseas más presencia del video */
+  pointer-events: none;
+  border-radius: 15px;
 }
 
-@keyframes mover-estrellas {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-.contenido-saga {
+.contenido-texto {
   position: relative;
   z-index: 1;
+}
+.encabezado-imagen {
   text-align: center;
-  color: #f8c471;
-}
-
-.contenido-saga h2 {
-  font-size: 42px;
-  font-family: 'Emilys Candy', cursive;
-  margin-bottom: 10px;
-}
-
-.contenido-saga p {
-  font-size: 18px;
-  color: #eee;
   margin-bottom: 20px;
 }
 
-.contenido-saga .btn-saga {
-  background-color: #f8c471;
-  color: #000;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  box-shadow: 0 0 12px rgba(255, 193, 7, 0.4);
-  transition: background 0.3s ease;
+.encabezado-imagen img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+/* Imagen por defecto */
+.img-saga {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.contenido-saga .btn-saga:hover {
-  background-color: #f39c12;
-  color: white;
+/* Reemplazar por versión móvil cuando el ancho sea menor a 768px */
+@media (max-width: 768px) {
+  .img-saga {
+    content: url("images/saga-angelo-movil.png");
+  }
 }
