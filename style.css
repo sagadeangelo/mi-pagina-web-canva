@@ -136,9 +136,22 @@ body {
 
 .tarjeta-servicio h3 {
   font-size: 20px;
-  color: #ffd700;
   margin-bottom: 10px;
 }
+
+/* Títulos por fondo */
+.fondo-kdp h3 {
+  color: #ffffff;
+}
+
+.fondo-epub h3 {
+  color: #2c3e50;
+}
+
+.fondo-maquetacion h3 {
+  color: #2c3e50;
+}
+
 
 .tarjeta-servicio p {
   color: #ccc;
@@ -581,6 +594,26 @@ body {
   gap: 15px;
   margin-top: 30px;
 }
+.detalle-libro1 .detalle-layout {
+  background: url("images/fondo-libro1.png") center/cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.detalle-libro2 .detalle-layout {
+  background: url("images/fondo-libro2.png") center/cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.detalle-libro3 .detalle-layout {
+  background: url("images/fondo-libro3.png") center/cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
 
 .btn-comprar, .btn-volver {
   display: inline-block;
@@ -767,5 +800,88 @@ body {
 .fondo-maquetacion {
   background: url("images/servicio-maquetacion.png") center/cover no-repeat;
   background-size: cover;
+  color: white;
+}
+.detalle-libro1 .detalle-layout {
+  background: url("images/fondo-libro1.png") center/cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.detalle-libro2 .detalle-layout {
+  background: url("images/fondo-libro2.png") center/cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.detalle-libro3 .detalle-layout {
+  background: url("images/fondo-libro3.png") center/cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+.explora-saga {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.fondo-animado {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(#f8c471 2px, transparent 2px);
+  background-size: 40px 40px;
+  animation: mover-estrellas 40s linear infinite;
+  opacity: 0.08;
+}
+
+@keyframes mover-estrellas {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.contenido-saga {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #f8c471;
+}
+
+.contenido-saga h2 {
+  font-size: 42px;
+  font-family: 'Emilys Candy', cursive;
+  margin-bottom: 10px;
+}
+
+.contenido-saga p {
+  font-size: 18px;
+  color: #eee;
+  margin-bottom: 20px;
+}
+
+.contenido-saga .btn-saga {
+  background-color: #f8c471;
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.4);
+  transition: background 0.3s ease;
+}
+
+.contenido-saga .btn-saga:hover {
+  background-color: #f39c12;
   color: white;
 }
