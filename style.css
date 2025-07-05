@@ -920,3 +920,21 @@ body {
   gap: 20px;
   flex-wrap: wrap;
 }
+.blog-cta {
+  text-align: center;
+  padding: 60px 20px;
+}
+.btn-blog {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f39c12;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.btn-blog:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
