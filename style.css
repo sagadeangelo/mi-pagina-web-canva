@@ -1,19 +1,19 @@
 /* Reset básico */
 * {
-  margin: 0;
+margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Emilys Candy', cursive;
+font-family: 'Emilys Candy', cursive;
   background-color: #000;
   color: #fff;
 }
 
 /* ----------------------- ENCABEZADO ----------------------- */
 .header-portada {
-  background: linear-gradient(180deg, #0a0a0a 60%, #1c1c1c);
+background: linear-gradient(180deg, #0a0a0a 60%, #1c1c1c);
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -23,11 +23,11 @@ body {
 }
 
 .logo img {
-  height: 70px;
+height: 70px;
 }
 
 .nav-botones {
-  list-style: none;
+list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -35,7 +35,7 @@ body {
 }
 
 .nav-botones li a {
-  display: inline-block;
+display: inline-block;
   padding: 10px 20px;
   border-radius: 30px;
   border: 2px solid #f5f5f5;
@@ -48,14 +48,14 @@ body {
 }
 
 .nav-botones li a:hover {
-  background-color: #ffd700;
+background-color: #ffd700;
   color: #000;
   border-color: #fff;
 }
 
 /* ----------------------- PORTADA ----------------------- */
 .portada {
-  background: url("images/fondo.png") center/cover no-repeat;
+background: url("images/fondo.png") center/cover no-repeat;
   padding: 100px 20px;
   text-align: center;
   position: relative;
@@ -63,7 +63,7 @@ body {
 }
 
 .portada::before {
-  content: "";
+content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0,0,0,0.4);
@@ -71,22 +71,21 @@ body {
 }
 
 .portada-contenido {
-  position: relative;
+position: relative;
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .titulo-portada {
-  font-size: 4rem;
+font-size: 4rem;
   color: #e8dac5; /* un dorado suave */
   text-shadow: 0 0 10px #f8c471, 0 0 20px #f39c12, 0 0 30px #f39c12;
   margin-bottom: 40px;
 }
 
-
 .subtitulo-portada {
-  font-size: 1.5rem;
+font-size: 1.5rem;
   font-weight: 300;
   color: #ccc;
   text-shadow: 1px 1px 3px #111;
@@ -94,20 +93,20 @@ body {
 
 /* ----------------------- SECCIÓN SERVICIOS ----------------------- */
 #servicios {
-  padding: 60px 20px;
+padding: 60px 20px;
   background: linear-gradient(160deg, #111, #333030);
   text-align: center;
 }
 
 #servicios h2 {
-  font-size: 46px;
+font-size: 46px;
   margin-bottom: 40px;
   color: #d96e11;
   font-family: 'Emilys Candy', cursive;
 }
 
 .servicios-grid {
-  display: grid;
+display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1200px;
@@ -115,7 +114,7 @@ body {
 }
 
 .tarjeta-servicio {
-  background-color: #1e1e1e;
+background-color: #1e1e1e;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
@@ -124,11 +123,11 @@ body {
 }
 
 .tarjeta-servicio:hover {
-  transform: translateY(-5px);
+transform: translateY(-5px);
 }
 
 .tarjeta-servicio img {
-  width: 100%;
+width: 100%;
   max-width: 240px;
   height: auto;
   border-radius: 12px;
@@ -136,32 +135,31 @@ body {
 }
 
 .tarjeta-servicio h3 {
-  font-size: 20px;
+font-size: 20px;
   margin-bottom: 10px;
 }
 
 /* Títulos por fondo */
 .fondo-kdp h3 {
-  color: #ffffff;
+color: #ffffff;
 }
 
 .fondo-epub h3 {
-  color: #2c3e50;
+color: #2c3e50;
 }
 
 .fondo-maquetacion h3 {
-  color: #2c3e50;
+color: #2c3e50;
 }
 
-
 .tarjeta-servicio p {
-  color: #ccc;
+color: #ccc;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
 .btn-servicio {
-  display: inline-block;
+display: inline-block;
   padding: 10px 20px;
   background-color: #f39c12;
   color: #0d0d0d;
@@ -172,13 +170,13 @@ body {
 }
 
 .btn-servicio:hover {
-  background-color: #e67e22;
+background-color: #e67e22;
   color: #fff;
 }
 
 /* ----------------------- SECCIÓN AUTOR ----------------------- */
 .autor-texto {
-  max-width: 1000px;
+max-width: 1000px;
   margin: 0 auto;
   padding: 60px 20px;
   text-align: justify;
@@ -188,19 +186,19 @@ body {
 }
 
 .autor-texto h2 {
-  font-size: 32px;
+font-size: 32px;
   color: #94def3;
   font-family: 'Emilys Candy', cursive;
 }
 
 .autor-texto h3 {
-  font-size: 20px;
+font-size: 20px;
   color: #ccc;
   margin-bottom: 20px;
 }
 
 .btn-saga {
-  display: inline-block;
+display: inline-block;
   padding: 12px 24px;
   background-color: #ffd700;
   color: #000;
@@ -212,35 +210,36 @@ body {
 }
 
 .btn-saga:hover {
-  background-color: #f39c12;
+background-color: #f39c12;
   color: #fff;
 }
 
 @media (max-width: 768px) {
-  .autor-texto {
+.autor-texto {
     padding: 30px 10px;
     font-size: 16px;
-  }
+}
+
 }
 
 /* ----------------------- OTROS (LIBROS, BLOG, ETC.) ----------------------- */
 /* Puedes seguir agregando tus otras secciones aquí */
 
 #libros {
-  background: linear-gradient(160deg, #1a1a1a, #0d0d0d);
+background: linear-gradient(160deg, #1a1a1a, #0d0d0d);
   padding: 60px 20px;
   text-align: center;
 }
 
 #libros h2 {
-  font-size: 42px;
+font-size: 42px;
   color: #f27929;
   margin-bottom: 40px;
   font-family: 'Emilys Candy', cursive;
 }
 
 .libros-grid {
-  display: grid;
+display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   max-width: 1200px;
@@ -248,19 +247,21 @@ body {
 }
 
 @media (min-width: 600px) {
-  .libros-grid {
+.libros-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
+}
+
 }
 
 @media (min-width: 900px) {
-  .libros-grid {
+.libros-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
+}
+
 }
 
 .tarjeta-libro {
-  background-color: #1e1e1e;
+background-color: #1e1e1e;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 166, 0, 0.3);
@@ -269,11 +270,11 @@ body {
 }
 
 .tarjeta-libro:hover {
-  transform: translateY(-5px);
+transform: translateY(-5px);
 }
 
 .tarjeta-libro img {
-  width: 100%;
+width: 100%;
   max-width: 240px;
   height: auto;
   border-radius: 12px;
@@ -281,19 +282,19 @@ body {
 }
 
 .tarjeta-libro h3 {
-  font-size: 20px;
+font-size: 20px;
   color: #ffd700;
   margin-bottom: 10px;
 }
 
 .tarjeta-libro p {
-  color: #ccc;
+color: #ccc;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
 .btn-libro {
-  display: inline-block;
+display: inline-block;
   padding: 10px 20px;
   background-color: #f39c12;
   color: #0d0d0d;
@@ -303,25 +304,44 @@ body {
   transition: background 0.3s ease;
 }
 
-.btn-libro:hover {
-  background-color: #e67e22;
+.btn-lia {
+display: inline-block;
+  padding: 12px 24px;
+  background-color: #00bcd4;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  margin-top: 20px;
+}
+
+.btn-lia:hover {
+background-color: #008ba3;
   color: #fff;
 }
+
+.btn-libro:hover {
+background-color: #e67e22;
+  color: #fff;
+}
+
 #blog {
-  background: linear-gradient(160deg, #0d0d0d, #000);
+background: linear-gradient(160deg, #0d0d0d, #000);
   padding: 60px 20px;
   text-align: center;
 }
 
 #blog h2 {
-  font-family: 'Emilys Candy', cursive;
+font-family: 'Emilys Candy', cursive;
   font-size: 42px;
   color: #f37c41;
   margin-bottom: 40px;
 }
 
 .blog-grid {
-  display: grid;
+display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   max-width: 1000px;
@@ -329,13 +349,14 @@ body {
 }
 
 @media (min-width: 700px) {
-  .blog-grid {
+.blog-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
+}
+
 }
 
 .tarjeta-blog {
-  background-color: #1e1e1e;
+background-color: #1e1e1e;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(243, 156, 18, 0.2);
@@ -344,23 +365,23 @@ body {
 }
 
 .tarjeta-blog:hover {
-  transform: translateY(-5px);
+transform: translateY(-5px);
 }
 
 .tarjeta-blog h3 {
-  font-size: 22px;
+font-size: 22px;
   color: #fff;
   margin-bottom: 12px;
 }
 
 .tarjeta-blog p {
-  color: #ccc;
+color: #ccc;
   font-size: 16px;
   margin-bottom: 15px;
 }
 
 .btn-blog {
-  display: inline-block;
+display: inline-block;
   background-color: #f39c12;
   color: #0d0d0d;
   padding: 10px 20px;
@@ -371,16 +392,17 @@ body {
 }
 
 .btn-blog:hover {
-  background-color: #e67e22;
+background-color: #e67e22;
   color: #fff;
 }
+
 .acerca-nosotros {
-  background-color: #1a1a1a;
+background-color: #1a1a1a;
   padding: 60px 20px;
 }
 
 .acerca-wrapper {
-  display: flex;
+display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
@@ -390,40 +412,40 @@ body {
 }
 
 .acerca-imagen img {
-  width: 100%;
+width: 100%;
   max-width: 450px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 }
 
 .acerca-texto {
-  flex: 1;
+flex: 1;
   color: #ccc;
 }
 
 .acerca-texto h2 {
-  font-size: 36px;
+font-size: 36px;
   color: #d47a19;
   margin-bottom: 20px;
   font-family: 'Emilys Candy', cursive;
 }
 
 .acerca-texto p {
-  font-size: 18px;
+font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
 }
 
 .acerca-botones {
-  display: flex;
+display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
 
 .btn-contacto,
 .btn-whatsapp {
-  display: inline-block;
+display: inline-block;
   padding: 12px 24px;
   background-color: #f39c12;
   color: #000;
@@ -435,54 +457,46 @@ body {
 
 .btn-contacto:hover,
 .btn-whatsapp:hover {
-  background-color: #e67e22;
+background-color: #e67e22;
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .acerca-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .acerca-texto {
-    padding: 0 10px;
-  }
 }
 .titulo-decorativo {
-  text-align: center;
+text-align: center;
   margin-bottom: 30px;
 }
 
 .titulo-decorativo h2 {
-  font-size: 42px;
+font-size: 42px;
   color: #f39c12;
   font-family: 'Emilys Candy', cursive;
 }
 
 .subtitulo-decorativo {
-  font-size: 18px;
+font-size: 18px;
   color: #ccc;
   margin-top: 5px;
   font-weight: 300;
 }
 
 .linea-decorativa {
-  width: 80px;
+width: 80px;
   height: 4px;
   background-color: #f39c12;
   margin: 10px auto 0;
   border-radius: 2px;
 }
+
 .footer {
-  background-color: #111;
+background-color: #111;
   color: #ccc;
   padding: 40px 20px 20px;
   font-size: 16px;
 }
 
 .footer-contenido {
-  max-width: 1200px;
+max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -492,60 +506,60 @@ body {
 }
 
 .footer-logo img {
-  max-width: 120px;
+max-width: 120px;
 }
 
 .footer-info {
-  flex: 1;
+flex: 1;
 }
 
 .footer-info p {
-  margin: 8px 0;
+margin: 8px 0;
 }
 
 .footer-info a {
-  color: #eba132;
+color: #eba132;
   text-decoration: none;
 }
 
 .footer-info a:hover {
-  color: #f2a221;
+color: #f2a221;
 }
 
 .footer-redes {
-  display: flex;
+display: flex;
   justify-content: center;
   gap: 25px;
   margin-top: 20px;
 }
 
 .footer-redes a svg {
-  width: 32px;
+width: 32px;
   height: 32px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .footer-redes a:hover svg {
-  transform: scale(1.1);
+transform: scale(1.1);
   filter: brightness(1.3);
 }
 
-
 .footer-copy {
-  text-align: center;
+text-align: center;
   margin-top: 30px;
   font-size: 14px;
   color: #666;
 }
+
 /* ======== Detalle de Servicio ======== */
 .detalle-seccion {
-  background: linear-gradient(180deg, #111, #1a1a1a);
+background: linear-gradient(180deg, #111, #1a1a1a);
   padding: 60px 20px;
   color: #f5f5f5;
 }
 
 .detalle-layout {
-  display: flex;
+display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
@@ -554,35 +568,35 @@ body {
 }
 
 .detalle-texto {
-  flex: 1 1 500px;
+flex: 1 1 500px;
 }
 
 .detalle-texto h1 {
-  font-size: 32px;
+font-size: 32px;
   margin-bottom: 20px;
   color: #ffd700;
   font-family: 'Emilys Candy', cursive;
 }
 
 .detalle-texto h2 {
-  font-size: 24px;
+font-size: 24px;
   margin: 25px 0 15px;
   color: #f39c12;
 }
 
 .detalle-texto p, .detalle-texto ul {
-  font-size: 17px;
+font-size: 17px;
   line-height: 1.7;
   margin-bottom: 20px;
   text-align: justify;
 }
 
 .detalle-texto ul li {
-  margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .detalle-imagen img {
-  width: 100%;
+width: 100%;
   max-width: 500px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -590,34 +604,35 @@ body {
 
 /* Botones */
 .botones-detalle {
-  display: flex;
+display: flex;
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 30px;
 }
+
 .detalle-libro1 .detalle-layout {
-  background: url("images/fondo-libro1.png") center/cover no-repeat;
+background: url("images/fondo-libro1.png") center/cover no-repeat;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .detalle-libro2 .detalle-layout {
-  background: url("images/fondo-libro2.png") center/cover no-repeat;
+background: url("images/fondo-libro2.png") center/cover no-repeat;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .detalle-libro3 .detalle-layout {
-  background: url("images/fondo-libro3.png") center/cover no-repeat;
+background: url("images/fondo-libro3.png") center/cover no-repeat;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .btn-comprar, .btn-volver {
-  display: inline-block;
+display: inline-block;
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
@@ -626,88 +641,59 @@ body {
 }
 
 .btn-comprar {
-  background-color: #f39c12;
+background-color: #f39c12;
   color: #000;
 }
 
 .btn-volver {
-  background-color: #444;
+background-color: #444;
   color: #fff;
 }
 
 .btn-comprar:hover {
-  background-color: #e67e22;
+background-color: #e67e22;
   color: #fff;
 }
 
 .btn-volver:hover {
-  background-color: #666;
+background-color: #666;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .detalle-layout {
+.detalle-layout {
     flex-direction: column-reverse;
     text-align: center;
-  }
+}
 
-  .detalle-texto {
-    padding: 0 10px;
-  }
 }
 .fondo-libro1 {
-  background: url("images/fondo-libro1.png") center/cover no-repeat;
+background: url("images/fondo-libro1.png") center/cover no-repeat;
   min-height: 100vh;
   color: white;
 }
 
 .detalle-seccion {
-  padding: 60px 20px;
+padding: 60px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.detalle-layout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  background-color: rgba(0,0,0,0.6);
-  padding: 40px;
-  border-radius: 20px;
-}
-
-.detalle-texto {
-  flex: 1 1 600px;
-}
-
-.detalle-texto h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #ffd700;
-}
-
 .detalle-texto p {
-  font-size: 17px;
+font-size: 17px;
   line-height: 1.7;
   text-align: justify;
   margin-bottom: 15px;
 }
 
 .detalle-imagen {
-  flex: 1 1 300px;
+flex: 1 1 300px;
   text-align: center;
 }
 
-.detalle-imagen img {
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.2);
-}
-
 .botones-detalle {
-  margin-top: 30px;
+margin-top: 30px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -715,7 +701,7 @@ body {
 
 .btn-comprar,
 .btn-volver {
-  padding: 12px 24px;
+padding: 12px 24px;
   background-color: #f39c12;
   color: #000;
   text-decoration: none;
@@ -727,50 +713,44 @@ body {
 
 .btn-comprar:hover,
 .btn-volver:hover {
-  background-color: #e67e22;
+background-color: #e67e22;
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .detalle-layout {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .detalle-imagen img {
-    max-width: 180px;
-  }
 }
 .fondo-libro2 {
-  background: url('images/fondo-libro2.png') no-repeat center center fixed;
+background: url('images/fondo-libro2.png') no-repeat center center fixed;
   background-size: cover;
 }
+
 .fondo-libro3 {
-  background: url('images/fondo-libro3.png') no-repeat center center fixed;
+background: url('images/fondo-libro3.png') no-repeat center center fixed;
   background-size: cover;
 }
+
 .fondo-libro1 .detalle-layout {
-  background: url("images/fondo-libro1.png") center/cover no-repeat;
+background: url("images/fondo-libro1.png") center/cover no-repeat;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .fondo-libro2 .detalle-layout {
-  background: url("images/fondo-libro2.png") center/cover no-repeat;
+background: url("images/fondo-libro2.png") center/cover no-repeat;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .fondo-libro3 .detalle-layout {
-  background: url("images/fondo-libro3.png") center/cover no-repeat;
+background: url("images/fondo-libro3.png") center/cover no-repeat;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
+
 #particles-js {
-  position: fixed;
+position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -783,54 +763,37 @@ body {
 .header-portada,
 .portada,
 .portada-contenido {
-  position: relative;
+position: relative;
   z-index: 1;
 }
+
 .fondo-kdp {
-  background: url("images/servicio-kdp.png") center/cover no-repeat;
+background: url("images/servicio-kdp.png") center/cover no-repeat;
   background-size: cover;
   color: white;
 }
 
 .fondo-epub {
-  background: url("images/servicio-epub.png") center/cover no-repeat;
+background: url("images/servicio-epub.png") center/cover no-repeat;
   background-size: cover;
   color: white;
 }
 
 .fondo-maquetacion {
-  background: url("images/servicio-maquetacion.png") center/cover no-repeat;
+background: url("images/servicio-maquetacion.png") center/cover no-repeat;
   background-size: cover;
   color: white;
 }
-.detalle-libro1 .detalle-layout {
-  background: url("images/fondo-libro1.png") center/cover no-repeat;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-}
 
-.detalle-libro2 .detalle-layout {
-  background: url("images/fondo-libro2.png") center/cover no-repeat;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-}
-
-.detalle-libro3 .detalle-layout {
-  background: url("images/fondo-libro3.png") center/cover no-repeat;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-}
 .subtexto-portada {
-  margin-top:125px; /* Puedes aumentar este número si aún se superpone */
+margin-top:125px; /* Puedes aumentar este número si aún se superpone */
   font-size: 1.2rem;
   color: #ddd;
   text-shadow: 1px 1px 3px #000;
 }
+
 .contenedor-saga {
-  position: relative;
+position: relative;
   overflow: hidden;
   max-width: 900px;
   margin: 40px auto;
@@ -842,7 +805,7 @@ body {
 }
 
 .video-fondo {
-  position: absolute;
+position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
@@ -854,34 +817,37 @@ body {
 }
 
 .contenido-texto {
-  position: relative;
+position: relative;
   z-index: 1;
 }
+
 .encabezado-imagen {
-  text-align: center;
+text-align: center;
   margin-bottom: 20px;
 }
 
 .encabezado-imagen img {
-  max-width: 100%;
+max-width: 100%;
   height: auto;
   display: inline-block;
 }
+
 /* Imagen por defecto */
 .img-saga {
-  width: 100%;
+width: 100%;
   height: auto;
   display: block;
 }
 
 /* Reemplazar por versión móvil cuando el ancho sea menor a 768px */
 @media (max-width: 768px) {
-  .img-saga {
+.img-saga {
     content: url("images/saga-angelo-movil.png");
-  }
+}
+
 }
 .detalle-texto {
-  background: linear-gradient(to right, #1e3c72, #2a5298); /* azul moderno */
+background: linear-gradient(to right, #1e3c72, #2a5298); /* azul moderno */
   padding: 30px;
   border-radius: 20px;
   color: white;
@@ -892,49 +858,231 @@ body {
 .detalle-texto h2,
 .detalle-texto p,
 .detalle-texto li {
-  color: white;
+color: white;
 }
+
 .seccion-contacto {
-  background: linear-gradient(160deg, #1a1a1a, #0d0d0d);
+background: linear-gradient(160deg, #1a1a1a, #0d0d0d);
   padding: 60px 20px;
   text-align: center;
   color: #fff;
 }
 
 .seccion-contacto h2 {
-  font-size: 42px;
+font-size: 42px;
   color: #f39c12;
   margin-bottom: 20px;
   font-family: 'Emilys Candy', cursive;
 }
 
 .seccion-contacto p {
-  font-size: 18px;
+font-size: 18px;
   color: #ccc;
   margin-bottom: 30px;
 }
 
 .botones-contacto {
-  display: flex;
+display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .blog-cta {
-  text-align: center;
+text-align: center;
   padding: 60px 20px;
 }
-.btn-blog {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #f39c12;
-  color: #000;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  margin-top: 20px;
+
+.lia-section {
+background: linear-gradient(160deg, #0d0d0d, #000);
+  color: #f0f0f0;
+  font-family: 'Emilys Candy', cursive;
+  padding: 60px 20px;
+  line-height: 1.7;
 }
-.btn-blog:hover {
-  background-color: #e67e22;
+
+.lia-recuadro {
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.7), rgba(0, 30, 40, 0.6));
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lia-hero-image {
+width: 130%;
+  max-width: 900px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.lia-content h2 {
+text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a8fce;
+}
+
+.lia-content h3 {
+margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #ed881d;
+}
+
+.lia-content ul {
+padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lia-content li {
+margin-bottom: 0.75rem;
+}
+
+.lia-content p {
+margin-bottom: 1.2rem;
+  color: #ccc;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.lia-logo-centrado {
+text-align: center;
+  margin: 30px 0 10px;
+}
+
+.lia-logo {
+max-width: 140px;
+  opacity: 0.8;
+}
+
+.btn-volver-inicio,
+.btn-descarga-app-prox {
+display: inline-block;
+  margin: 20px 10px 0;
+  padding: 12px 24px;
+  background-color: #035fba;
+  color: #0a0a0a;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(204, 125, 5, 0.4);
+}
+
+.btn-volver-inicio:hover,
+.btn-descarga-app-prox:hover {
+background-color: #f5e29f;
+  color: #262525;
+}
+
+.home-icon {
+display: inline-block;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.home-icon:hover {
+color: #ffffff;
+}
+
+.btn-volver-inicio {
+display: inline-block;
+  margin: 20px 10px 0;
+  padding: 12px 24px;
+  background-color: #444;
   color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.btn-volver-inicio:hover {
+background-color: #666;
+  color: #ffd700;
+}
+
+.lia-hero {
+text-align: center;
+  margin-bottom: 3rem; /* aumentaste de 2rem a 3rem */
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+to {
+opacity: 1;
+    transform: translateY(0);
+}
+
+}
+@media (max-width: 600px) {
+.lia-recuadro {
+    padding: 20px;
+}
+
+}
+.subtitulo-lia {
+text-align: center;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.lia-cta {
+text-align: center;
+  font-size: 1.1rem;
+  color: #00ff00;
+  font-weight: bold;
+  margin: 30px 0;
+}
+.lia-botones {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lia-botones a {
+  display: inline-block;
+  margin: 10px 12px;
+}
+.home-icon-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-decoration: none;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home-icon-fixed:hover {
+  transform: scale(1.1);
+  background-color: #008ba3;
+  color: #fff;
+}
+.lia-content a {
+  color: #91b2f9; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lia-content a:hover {
+  color: #232223; 
+  text-decoration: underline;
 }
