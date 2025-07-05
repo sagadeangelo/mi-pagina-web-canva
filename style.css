@@ -913,8 +913,8 @@ background: linear-gradient(160deg, #0d0d0d, #000);
 }
 
 .lia-hero-image {
-width: 130%;
-  max-width: 900px;
+width: 100%;
+  max-width: 700px;
   border-radius: 12px;
   margin-bottom: 40px;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
@@ -1085,4 +1085,19 @@ text-align: center;
 .lia-content a:hover {
   color: #232223; 
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .home-icon-fixed {
+    bottom: 80px; /* sube el icono */
+    right: 20px;
+  }
+
+  .btn-descarga-app-prox {
+    margin-bottom: 60px; /* agrega separación si es necesario */
+  }
+
+  .lia-hero-image {
+    width: 100%; /* evita que se desborde */
+    max-width: 100%;
+  }
 }
