@@ -880,3 +880,17 @@ body {
     content: url("images/saga-angelo-movil.png");
   }
 }
+.detalle-texto {
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* azul moderno */
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.detalle-texto h1,
+.detalle-texto h2,
+.detalle-texto p,
+.detalle-texto li {
+  color: white;
+}
