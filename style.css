@@ -894,3 +894,29 @@ body {
 .detalle-texto li {
   color: white;
 }
+.seccion-contacto {
+  background: linear-gradient(160deg, #1a1a1a, #0d0d0d);
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.seccion-contacto h2 {
+  font-size: 42px;
+  color: #f39c12;
+  margin-bottom: 20px;
+  font-family: 'Emilys Candy', cursive;
+}
+
+.seccion-contacto p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.botones-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
