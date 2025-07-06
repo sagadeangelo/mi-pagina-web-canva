@@ -157,6 +157,11 @@ color: #ccc;
   font-size: 16px;
   margin-bottom: 15px;
 }
+.fondo-branding {
+  background: #1b1b2f;
+  color: #fff;
+}
+
 
 .btn-servicio {
 display: inline-block;
